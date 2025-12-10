@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ศูนย์รวมเมนู (Main Index)</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* ให้เต็มหน้าจอ */
+        }
+        .main-header {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: column; /* จัดเรียงปุ่มเป็นแนวตั้ง */
+            gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+            width: 90%;
+            max-width: 400px; /* จำกัดความกว้างเพื่อความสวยงามบนมือถือ */
+        }
+        .menu-link {
+            text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+            display: block;
+        }
+        .menu-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            font-size: 1.1em;
+            font-weight: bold;
+            width: 100%;
+            box-shadow: 0 4px #2980b9; /* ทำให้ดูมีมิติ */
+        }
+        .menu-button:hover {
+            background-color: #2980b9;
+        }
+        .menu-button:active {
+            transform: translateY(4px); /* เอฟเฟกต์กดปุ่ม */
+            box-shadow: 0 0 #2980b9;
+        }
+        .menu-button.fresh-food {
+            background-color: #27ae60; /* สีเขียวสำหรับ Fresh Food */
+            box-shadow: 0 4px #229954;
+        }
+        .menu-button.fresh-food:hover {
+            background-color: #229954;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-header">🍣 ศูนย์รวมเว็บไซต์เมนูอาหาร</h1>
+
+    <div class="menu-container">
+        <a href="sushi-menu.html" class="menu-link">
+            <button class="menu-button">รายละเอียดเมนูซูชิ Villa Market</button>
+        </a>
+
+        <a href="https://anawinza.github.io/-Fresh-Food/" target="_blank" class="menu-link">
+            <button class="menu-button fresh-food">เมนู Fresh Food (เว็บไซต์ภายนอก)</button>
+        </a>
+
+        <a href="#" class="menu-link">
+            <button class="menu-button" style="background-color: #f39c12; box-shadow: 0 4px #e67e22;">
+                📝 เมนูอื่น ๆ ในอนาคต
+            </button>
+        </a>
+    </div>
+
+</body>
+</html>
